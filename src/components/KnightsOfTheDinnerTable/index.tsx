@@ -78,7 +78,7 @@ export const defaultInput: { [key: string]: { [key: string]: number } } = {
 
 const KnightsOfTheDinnerTable = () => {
   const classes = useStyles();
-  const solution = getSolution(defaultInput);
+  const solution = getCombinationOfTheHighestPossibleTotalHappiness(defaultInput);
   console.log(solution);
   return (
     <div className={classes.KnightsOfTheDinnerTable}>
@@ -150,7 +150,10 @@ export const calcHappiness = (
   return result;
 };
 
-export const getSolution = (happinessObject: object): any => {
+export const getCombinationOfTheHighestPossibleTotalHappiness = (
+  happinessObject: object
+): any => {
+  //TODO: write an algorithm that solve the issue.
   return [
     "Alice",
     "Bob",
