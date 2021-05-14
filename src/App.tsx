@@ -1,4 +1,3 @@
-import React from "react";
 import KnightsOfTheDinnerTable from "./components/KnightsOfTheDinnerTable";
 
 const App = () => {
