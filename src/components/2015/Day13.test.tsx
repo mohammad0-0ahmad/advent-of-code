@@ -1,4 +1,4 @@
-import { calcHappiness, defaultInput, getCombinationOfTheHighestPossibleTotalHappiness } from ".";
+import { calcHappiness, defaultInput, getCombinationOfTheHighestPossibleTotalHappiness } from "../KnightsOfTheDinnerTable";
 import { getAllArrayCombinations } from "../../utilities/Array";
 
 test("getSolution", () => {

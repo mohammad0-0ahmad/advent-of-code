@@ -78,7 +78,8 @@ export const defaultInput: { [key: string]: { [key: string]: number } } = {
 
 const KnightsOfTheDinnerTable = () => {
   const classes = useStyles();
-  const solution = getCombinationOfTheHighestPossibleTotalHappiness(defaultInput);
+  const solution =
+    getCombinationOfTheHighestPossibleTotalHappiness(defaultInput);
   console.log(solution);
   return (
     <div className={classes.KnightsOfTheDinnerTable}>
