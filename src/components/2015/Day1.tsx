@@ -4,7 +4,7 @@ const Day1 = () => {
   const [sum, basementFirstChar] = findSolution();
   return (
     <div>
-      <h4>day1:</h4>
+      <h4>day1: Not Quite Lisp</h4>
       <p>input1 : {sum}</p>
       <p>First time in basement char index: {basementFirstChar + 1}</p>
     </div>

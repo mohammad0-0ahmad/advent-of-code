@@ -4,7 +4,7 @@ const Day2 = () => {
   const [totalArea, totalAreaWithBow] = findSolution();
   return (
     <div>
-      <h4>day2:</h4>
+      <h4>day2:  I Was Told There Would Be No Math</h4>
       <p>part1: How many total feet of ribbon should they order? {totalArea}</p>
       <p>
         part2: How many total feet of ribbon should they order?{" "}

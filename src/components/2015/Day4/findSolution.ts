@@ -1,10 +1,10 @@
 import MD5 from "crypto-js/md5";
 
-export function findSolution(secretKey) {
+export function findSolution(secretKey, prefix) {
   let i = 0;
   let textToHash = "";
   let currentHash = "";
-  while (!currentHash.startsWith("000000")) {
+  while (!currentHash.startsWith(prefix)) {
     i++;
     textToHash = secretKey + i;
     currentHash = MD5(textToHash).toString();
