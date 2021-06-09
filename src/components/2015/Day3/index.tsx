@@ -1,4 +1,4 @@
-import input1 from "../inputs/2015/day3/input1";
+import input from "./input";
 
 const Day3 = () => {
   return (
@@ -23,22 +23,22 @@ const getAmountVisitedHouses = (amountPersons: number) => {
   const persons = new Array(amountPersons).fill({ x: 0, y: 0 });
   for (
     let i = 0, firstTime = true;
-    i < input1.length;
+    i < input.length;
     i =
-      i + amountPersons <= input1.length
+      i + amountPersons <= input.length
         ? i + amountPersons
         : firstTime
         ? (() => {
             firstTime = false;
-            return input1.length - 1;
+            return input.length - 1;
           })()
-        : input1.length
+        : input.length
   ) {
     persons.forEach((_, index) => {
-      if (input1?.[i + index]) {
+      if (input?.[i + index]) {
         persons[index] = askElfForNewDestination(
           persons[index],
-          input1[i + index]
+          input[i + index]
         );
         visitedHouses[persons[index].x + "," + persons[index].y] = true;
       }

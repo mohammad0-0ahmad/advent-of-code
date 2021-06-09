@@ -1,4 +1,4 @@
-import input1 from "../inputs/2015/day1/input1";
+import input1 from "./input";
 
 const Day1 = () => {
   const [sum, basementFirstChar] = findSolution();

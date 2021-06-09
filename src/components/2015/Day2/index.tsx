@@ -1,4 +1,4 @@
-import input1 from "../inputs/2015/day2/input1";
+import input1 from "./input";
 
 const Day2 = () => {
   const [totalArea, totalAreaWithBow] = findSolution();
