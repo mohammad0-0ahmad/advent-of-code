@@ -16,10 +16,7 @@ const getFirstPartSolution = (input: string) => {
   let result = 0;
   input.split("\n").forEach((word: string) => {
     const isContainsDisallowedSubString = /ab|cd|pq|xy/g.test(word);
-    const isContainsDubbelLetter =
-      /(aa|bb|cc|dd|ee|ff|gg|hh|ii|jj|kk|ll|mm|nn|oo|pp|qq|rr|ss|tt|uu|vv|ww|xx|yy|zz){1,}/g.test(
-        word
-      );
+    const isContainsDubbelLetter = /(.)\1/g.test(word);
     const vowels = word.match(/[aeiou]/g);
     const isContainsAtLeastThreeVowels = vowels?.length && vowels.length > 2;
 
